@@ -1,6 +1,8 @@
 package de.zerocode.testing;
 
 import de.zerocode.util.*;
+import de.zerocode.vehicle.Car;
+import de.zerocode.vehicle.Vehicle;
 
 public class ObjectCastingCarTesting {
 	public static void main(String[] args) {

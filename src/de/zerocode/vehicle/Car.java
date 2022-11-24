@@ -1,4 +1,4 @@
-package de.zerocode.util;
+package de.zerocode.vehicle;
 
 public class Car extends Vehicle {
 	public String colour;

@@ -16,6 +16,7 @@ public class CompositionTesting {
 		System.out.println("Student Address" + student.address);
 		System.out.println("Student Roll No" + student.rollNo);
 		System.out.println("Student father Name" + student.fatherName);
+		System.out.println(student);
 
 		Student studentone = new Student("Bhanu", "18NH1A0304", "8919190233", "Prasad", "gudivada");
 		College collegeone = new College("VKR", "Gudivada", 1500, 150, studentone);
