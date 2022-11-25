@@ -2,40 +2,38 @@ package de.zerocode.util;
 
 public class ExceptionsHandling {
 
-	public Object division(int first, int second) {
-		Object op = 0;
+	public Object getDivision(int first, int second) {
+		Object output = 0;
 		try {
-			op = (first / second);
+			output = (first / second);
 		} catch (ArithmeticException arithmeticException) {
-			op = "Cannot perform this operation";
+			output = "Cannot perform this operation";
 		}
-		return op;
+		return output;
 	}
 
-	public void stringProgram(String name) {
+	public Object getString(String name) {
+		Object output = 0;
 		try {
-			System.out.println(name.charAt(6));
+			output = name.charAt(6);
 		} catch (StringIndexOutOfBoundsException index) {
-			System.out.println(index);
+			output = index;
 		} catch (NullPointerException pointer) {
-			System.out.println(pointer + " the given string is null");
+			output = pointer;
 		}
+		return output;
 	}
 
-	public void arrayProgram(int size, String value) {
+	public Object getArray(int size, int position,int value) {
+		Object output;
+
 		int array[] = new int[size];
 		try {
-			array[8] = 10;
+			 array[position] = value;
+			 output = array[position];
 		} catch (ArrayIndexOutOfBoundsException outOfBoundsException) {
-			System.out.println(outOfBoundsException + "The length of the array is " + array.length);
+			output = outOfBoundsException;
 		}
-
-		try {
-			int number = Integer.parseInt(value);
-			System.out.println(number);
-		} catch (NumberFormatException format) {
-			System.out.println(format);
-		}
-
+		return output;
 	}
 }

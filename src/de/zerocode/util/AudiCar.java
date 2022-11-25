@@ -1,6 +1,7 @@
 package de.zerocode.util;
 
-public class AudiCar extends Vehicle {
+public class AudiCar extends Vehicle implements Runnable {
+	
 	@Override
 	public String start() {
 		return "withButton";
@@ -19,6 +20,14 @@ public class AudiCar extends Vehicle {
 	@Override
 	public String brake() {
 		return "ABS";
+	}
+
+	@Override
+	public void run() {
+		System.out.println(start());
+		System.out.println(accelerate());
+		System.out.println(brake());
+		System.out.println(stop());
 	}
 
 }
