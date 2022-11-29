@@ -4,6 +4,7 @@ public class Strings {
 	public static void main(String[] args) {
 		ReverseString reverse = new ReverseString();
 		System.out.println("The given String is palindrome "+reverse.isPalindrome("OYo"));
+		System.out.println(reverse.getReverse("sujwal"));
 
 		// By Using equals() Method
 		String one = "Ravi";
@@ -32,7 +33,7 @@ public class Strings {
 		System.out.println(one.indexOf('v'));
 		one=one.replace('a', 'b');
 		System.out.println(one);
-	
+		
 		
 	}
 
